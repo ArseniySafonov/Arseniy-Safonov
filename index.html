@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Форма для регистрации</h2>
+    <form action="31_3.php" method=POST>
+        Имя <br><input type=text name="first_name"
+        value="Введите Ваше имя"><br>
+        Фамилия <br><input type=text name="last_name"><br>
+        E-mail <br><input type=text name="email"><br>
+        <p>
+            Выберите спецкурс, который вы хотели посещать: <br>
+        <input type=radio name="kurs" value="PHP">PHP<br>
+        <input type=radio name="kurs" value="Web-дизайн: HTML">Web-дизайн: HTML<br>
+        <input type=radio name="kurs" value="Web-дизайн: Flash"> Web-дизайн: Flash<br>
+        <p> Что вы хотите, чтобы мы знали о вас? <br>
+    
+        <textarea name="commnet" cols=32 rows=5></textarea>
+        <p><input name="confirm" type=checkbox
+        checked> Потдвердить получение <br>
+        <input type=submit value="Отправить">
+        <input type=submit value="Отменить">
+    </form>
+</body>
+</html>
