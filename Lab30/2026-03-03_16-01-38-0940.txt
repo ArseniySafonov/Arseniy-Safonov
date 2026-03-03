@@ -1,0 +1,16 @@
+To: arseny060906@mail.ru  САФОНОВ АРСЕНИЙ
+Subject: Test HTML
+X-PHP-Originating-Script: 0:2.php
+From: PSSIP@tut.by
+MIME-Version: 1.0
+Content-type: text/html; charset=UTF-8
+
+<html>
+<head>
+<title>Тест рассылка</title>
+</head>
+<body>
+<p>Проверка работы функции mail()</p>
+</body>
+</html>
+

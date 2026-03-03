@@ -1,0 +1,9 @@
+To: arseny060906@mail.ru САФОНОВ АРСЕНИЙ
+Subject: Test
+X-PHP-Originating-Script: 0:send_email.php
+From: PSSIP@tut.by
+X-Mailer: PHP/8.0.22
+
+Здравствуйте!
+ Вы подписались на рассылку
+ по ПССИП
