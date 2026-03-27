@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>Поиск номера телефона</title>
+
+<script>
+function showHint(str) {
+    if (str.length == 0) {
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else {
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xhr.open("GET", "getajax.php?q=" + encodeURIComponent(str), true);
+        xhr.send();
+    }
+}
+</script>
+
+</head>
+<body>
+
+<p>Начните вводить номер вашего телефона, начиная с кода, в текстовое поле ниже:</p>
+<form>
+  Телефон: 8-0 <input type="text" onkeyup="showHint(this.value)">
+</form>
+<p>Предлагаемые варианты: <span id="txtHint"></span></p>
+
+</body>
+</html>
